@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+            background: url(bgiii.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1 {
+            margin: 20px 0;
+            color: whitesmoke;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .skill-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .skill-card h2 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .skill-card p {
+            font-size: 16px;
+            color: #666;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .progress {
+            height: 10px;
+            border-radius: 10px;
+            background-color: #4caf50;
+        }
+        .skill {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #000000;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .skill-label {
+            font-size: 15px;
+            font-weight: normal;
+            flex: 1;
+            color: white;
+        }
+        .stars {
+            color: #f4c542; 
+            font-size: 20px;
+        }
+        .stars .empty {
+            color: #ccc; 
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>My Skills</h1>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h2>Web Developer</h2>
+            <p>Building responsive websites using HTML, CSS, JavaScript, and React.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 88%;"></div>
+            </div>
+            <p>88%</p>
+            <div class="skill">
+                <span class="skill-label">HTML -</span>
+                <span class="stars">★★★★★</span> 
+            </div>
+            <div class="skill">
+                <span class="skill-label">CSS -</span>
+                <span class="stars">★★★★☆</span>
+            </div>
+            <div class="skill">
+                <span class="skill-label">JavaScript -</span>
+                <span class="stars">★★★☆☆</span>
+            </div>
+            <div class="skill">
+                <span class="skill-label">PHP -</span>
+                <span class="stars">★★☆☆☆</span>
+            </div>
+            <div class="skill">
+                <span class="skill-label">MySQL -</span>
+                <span class="stars">★★★☆☆</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h2>Graphic Designer</h2>
+            <p>Designing creative graphics using Photoshop, Illustrator, and Canva.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 76%;"></div>
+            </div>
+            <p>76%</p>
+            <div class="skill">
+                <span class="skill-label">Canva -</span>
+                <span class="stars">★★★★★</span>
+            </div>
+            <div class="skill">
+                <span class="skill-label">Typography -</span>
+                <span class="stars">★★★☆☆</span>
+            </div>
+            <div class="skill">
+                <span class="skill-label">Branding -</span>
+                <span class="stars">★★☆☆☆</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h2>Video Editor</h2>
+            <p>Editing videos using Adobe Premiere Pro, DaVinci Resolve, and After Effects.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 92%;"></div>
+            </div>
+            <p>92%</p>
+             <div class="skill">
+            <span class="skill-label">Adobe Premier Pro -</span>
+            <span class="stars">★★★☆☆</span>
+        </div>
+        <div class="skill">
+            <span class="skill-label">After Effects -</span>
+            <span class="stars">★★★☆☆</span>
+        </div>
+        <div class="skill">
+            <span class="skill-label">Capcut -</span>
+            <span class="stars">★★★★★</span>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+    
