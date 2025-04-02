@@ -227,3 +227,46 @@ span{
         margin-top: 4rem;
     }
 }
+/* Make header flexible */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+}
+
+/* Use grid for home section */
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        grid-template-columns: 1fr; /* Single column layout */
+        text-align: center;
+    }
+
+    .home-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Navbar for Mobile */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
