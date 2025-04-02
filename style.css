@@ -227,46 +227,55 @@ span{
         margin-top: 4rem;
     }
 }
-/* Make header flexible */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+/* Ensure proper mobile responsiveness */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Use grid for home section */
-.home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 2rem;
+/* Navigation Menu */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Navigation Links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 0;
+    display: block;
+}
+
+/* Active Link Underline */
+.navbar a.active {
+    border-bottom: 2px solid #b74b4b;
+    padding-bottom: 5px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .home {
-        grid-template-columns: 1fr; /* Single column layout */
-        text-align: center;
+    .navbar {
+        width: 200px;
+        padding-left: 15px;
     }
 
-    .home-img {
-        display: flex;
-        justify-content: center;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-/* Navbar for Mobile */
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    .navbar a {
+        font-size: 16px;
+        padding: 8px 0;
     }
 }
