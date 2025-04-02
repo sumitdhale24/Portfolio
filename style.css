@@ -173,7 +173,7 @@ span{
     min-width: 280px;
 }
 .typing-text span{
-    position: fixed;
+    position: relative;
 }
 .typing-text span::before{
     content: "web developer";
@@ -205,7 +205,7 @@ span{
     61%, 100%{
         content: "Video Editor";
     }
-}-->
+}
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
